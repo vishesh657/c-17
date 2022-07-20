@@ -1,4 +1,6 @@
 
+// Online IDE - Code Editor, Compiler, Interpreter
+
 #include<bits/stdc++.h>
 
 using namespace std;
@@ -27,5 +29,14 @@ int main()
         std::cout << *it << " ";
         std::advance(it, 2);
     }
+    int ser=20;
+    it = std::find (vec.begin(), vec.end(), ser);
+    if (it != vec.end())
+    {
+        std::cout << "Element " << ser <<" found at position : " ;
+        std::cout << it - vec.begin() << " (counting from zero) \n" ;
+    }
+    else
+        std::cout << "Element not found.\n\n";
     return 0;
 }
